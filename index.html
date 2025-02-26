@@ -1,0 +1,289 @@
+<html>
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <style>
+        .blink {
+            animation: blinker 1s linear infinite;
+        }
+        
+        @keyframes blinker {
+            50% { opacity: 0; }
+        }
+
+        .flash {
+            animation: flash 0.5s ease-in-out;
+        }
+
+        @keyframes flash {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-white p-4">
+    <div class="flex flex-col items-center w-full">
+        <!-- First Row -->
+        <div class="grid grid-cols-8 gap-2 mb-4 w-full">
+            <div id="room-710" class="relative border border-black p-4 flex items-center justify-center col-span-1 h-20 bg-green-200" onclick="showPopup('room-710')" oncontextmenu="showContextMenu(event, 'room-710')">
+                710
+                <input type="checkbox" class="absolute top-1 right-1" onclick="event.stopPropagation();">
+            </div>
+            <div id="room-709" class="relative border border-black p-4 flex items-center justify-center col-span-1 h-20 bg-green-200" onclick="showPopup('room-709')" oncontextmenu="showContextMenu(event, 'room-709')">
+                709
+                <input type="checkbox" class="absolute top-1 right-1" onclick="event.stopPropagation();">
+            </div>
+            <div id="room-708" class="relative border border-black p-4 flex items-center justify-center col-span-1 h-20 bg-green-200" onclick="showPopup('room-708')" oncontextmenu="showContextMenu(event, 'room-708')">
+                708
+                <input type="checkbox" class="absolute top-1 right-1" onclick="event.stopPropagation();">
+            </div>
+        </div>
+        <!-- Spacer Row -->
+        <div class="grid grid-cols-8 gap-2 mb-4 w-full">
+            <div class="col-span-8"></div>
+        </div>
+        <!-- Second Row -->
+        <div class="grid grid-cols-8 gap-2 mb-4 w-full">
+            <div id="room-807" class="relative border border-black p-4 flex items-center justify-center col-span-1 h-20 bg-green-200" onclick="showPopup('room-807')" oncontextmenu="showContextMenu(event, 'room-807')">
+                B-807
+                <input type="checkbox" class="absolute top-1 right-1" onclick="event.stopPropagation();">
+            </div>
+            <div id="room-808" class="relative border border-black p-4 flex items-center justify-center col-span-1 h-20 bg-green-200" onclick="showPopup('room-808')" oncontextmenu="showContextMenu(event, 'room-808')">
+                B-808
+                <input type="checkbox" class="absolute top-1 right-1" onclick="event.stopPropagation();">
+            </div>
+            <div id="room-809" class="relative border border-black p-4 flex items-center justify-center col-span-1 h-20 bg-green-200" onclick="showPopup('room-809')" oncontextmenu="showContextMenu(event, 'room-809')">
+                B-809
+                <input type="checkbox" class="absolute top-1 right-1" onclick="event.stopPropagation();">
+            </div>
+            <div id="room-810" class="relative border border-black p-4 flex items-center justify-center col-span-1 h-20 bg-green-200" onclick="showPopup('room-810')" oncontextmenu="showContextMenu(event, 'room-810')">
+                B-810
+                <input type="checkbox" class="absolute top-1 right-1" onclick="event.stopPropagation();">
+            </div>
+            <div id="room-811" class="relative border border-black p-4 flex items-center justify-center col-span-1 h-20 bg-green-200" onclick="showPopup('room-811')" oncontextmenu="showContextMenu(event, 'room-811')">
+                B-811
+                <input type="checkbox" class="absolute top-1 right-1" onclick="event.stopPropagation();">
+            </div>
+            <div id="room-812" class="relative border border-black p-4 flex items-center justify-center col-span-1 h-20 bg-green-200" onclick="showPopup('room-812')" oncontextmenu="showContextMenu(event, 'room-812')">
+                B-812
+                <input type="checkbox" class="absolute top-1 right-1" onclick="event.stopPropagation();">
+            </div>
+            <div id="room-814" class="relative border border-black p-4 flex items-center justify-center col-span-1 h-20 bg-green-200" onclick="showPopup('room-814')" oncontextmenu="showContextMenu(event, 'room-814')">
+                B-814
+                <input type="checkbox" class="absolute top-1 right-1" onclick="event.stopPropagation();">
+            </div>
+            <div id="room-815" class="relative border border-black p-4 flex items-center justify-center col-span-1 h-20 bg-green-200" onclick="showPopup('room-815')" oncontextmenu="showContextMenu(event, 'room-815')">
+                B-815
+                <input type="checkbox" class="absolute top-1 right-1" onclick="event.stopPropagation();">
+            </div>
+        </div>  
+        <!-- Third Row -->
+        <div class="grid grid-cols-8 gap-2 mb-12 w-full">
+            <div class="grid grid-rows-2 gap-2 col-span-1">
+                <div id="room-702" class="relative border border-black p-4 flex items-center justify-center h-20 bg-green-200" onclick="showPopup('room-702')" oncontextmenu="showContextMenu(event, 'room-702')">
+                    A-702
+                    <input type="checkbox" class="absolute top-1 right-1" onclick="event.stopPropagation();">
+                </div>
+                <div id="room-701" class="relative border border-black p-4 flex items-center justify-center h-20 bg-green-200" onclick="showPopup('room-701')" oncontextmenu="showContextMenu(event, 'room-701')">
+                    A-701
+                    <input type="checkbox" class="absolute top-1 right-1" onclick="event.stopPropagation();">
+                </div>
+            </div>
+            <div class="grid grid-rows-2 gap-2 col-span-1">
+                <div id="room-705" class="relative border border-black p-4 flex items-center justify-center h-20 bg-green-200" onclick="showPopup('room-705')" oncontextmenu="showContextMenu(event, 'room-705')">
+                    A-705
+                    <input type="checkbox" class="absolute top-1 right-1" onclick="event.stopPropagation();">
+                </div>
+                <div id="room-703" class="relative border border-black p-4 flex items-center justify-center h-20 bg-green-200" onclick="showPopup('room-703')" oncontextmenu="showContextMenu(event, 'room-703')">
+                    A-703
+                    <input type="checkbox" class="absolute top-1 right-1" onclick="event.stopPropagation();">
+                </div>
+            </div>
+            <div class="grid grid-rows-2 gap-2 col-span-1">
+                <div id="room-705-2" class="relative border border-black p-4 flex items-center justify-center h-20 bg-green-200" onclick="showPopup('room-705-2')" oncontextmenu="showContextMenu(event, 'room-705-2')">
+                    A-705
+                    <input type="checkbox" class="absolute top-1 right-1" onclick="event.stopPropagation();">
+                </div>
+                <div id="room-706" class="relative border border-black p-4 flex items-center justify-center h-20 bg-green-200" onclick="showPopup('room-706')" oncontextmenu="showContextMenu(event, 'room-706')">
+                    A-706
+                    <input type="checkbox" class="absolute top-1 right-1" onclick="event.stopPropagation();">
+                </div>
+            </div>
+            <div id="room-801" class="relative border border-black p-4 flex items-center justify-center col-span-1 h-20 bg-green-200" onclick="showPopup('room-801')" oncontextmenu="showContextMenu(event, 'room-801')">
+                A-801
+                <input type="checkbox" class="absolute top-1 right-1" onclick="event.stopPropagation();">
+            </div>
+            <div id="room-802" class="relative border border-black p-4 flex items-center justify-center col-span-1 h-20 bg-green-200" onclick="showPopup('room-802')" oncontextmenu="showContextMenu(event, 'room-802')">
+                A-802
+                <input type="checkbox" class="absolute top-1 right-1" onclick="event.stopPropagation();">
+            </div>
+            <div id="room-803" class="relative border border-black p-4 flex items-center justify-center col-span-1 h-20 bg-green-200" onclick="showPopup('room-803')" oncontextmenu="showContextMenu(event, 'room-803')">
+                A-803
+                <input type="checkbox" class="absolute top-1 right-1" onclick="event.stopPropagation();">
+            </div>
+            <div id="room-805" class="relative border border-black p-4 flex items-center justify-center col-span-1 h-20 bg-green-200" onclick="showPopup('room-805')" oncontextmenu="showContextMenu(event, 'room-805')">
+                A-805
+                <input type="checkbox" class="absolute top-1 right-1" onclick="event.stopPropagation();">
+            </div>
+            <div id="room-806" class="relative border border-black p-4 flex items-center justify-center col-span-1 h-20  bg-green-200" onclick="showPopup('room-806')" oncontextmenu="showContextMenu(event, 'room-806')">
+                A-806
+                <input type="checkbox" class="absolute top-1 right-1" onclick="event.stopPropagation();">
+            </div>
+        </div>
+        <!-- Legend -->
+        <div class="flex flex-row items-center mb-12 space-x-4 w-full">
+            <div class="flex items-center">
+                <div class="w-8 h-4 bg-green-200 mr-2"></div>
+                <span>Available</span>
+            </div>
+            <div class="flex items-center">
+                <div class="w-8 h-4 bg-red-200 mr-2"></div>
+                <span>Booked</span>
+            </div>
+            <div class="flex items-center">
+                <div class="w-8 h-4 bg-gray-200 mr-2"></div>
+                <span>Maintenance</span>
+            </div>
+        </div>
+        <!-- Buttons -->
+        <div class="flex justify-start w-full mb-12 space-x-2">
+            <div class="border border-black p-2 rounded-lg w-1/6 text-center bg-blue-500 text-white">Check in/out log</div>
+        </div>
+        <!-- Footer -->
+        <div class="text-center">
+            <span>Powered by: OPTISYS IT Solution Inc.</span>
+            <span>All Rights Reserved.2025</span>
+        </div>
+    </div>
+
+    <!-- Popup -->
+    <div id="popup" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center hidden">
+        <div class="bg-white p-4 rounded-lg">
+            <h2 class="text-xl mb-4">Set Room Status</h2>
+            <button class="bg-green-200 text-black p-2 rounded mb-2 w-full" onclick="setStatus('bg-green-200')">Available</button>
+            <button class="bg-red-200 text-black p-2 rounded mb-2 w-full" onclick="showBookingOptions()">Booked</button>
+            <button class="bg-gray-200 text-black p-2 rounded mb-2 w-full" onclick="setStatus('bg-gray-200')">Maintenance</button>
+            <button class="bg-blue-500 text-white p-2 rounded w-full" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <!-- Booking Popup -->
+    <div id="booking-popup" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center hidden">
+        <div class="bg-white p-4 rounded-lg">
+            <h2 class="text-xl mb-4">Booking Duration</h2>
+            <button class="bg-red-200 text-black p-2 rounded mb-2 w-full" onclick="setBookingDuration('1 Minute')">1 Minute</button>
+            <button class="bg-red-200 text-black p-2 rounded mb-2 w-full" onclick="setBookingDuration('1 hour')">1 Hour</button>
+            <button class="bg-red-200 text-black p-2 rounded mb-2 w-full" onclick="setBookingDuration('3 hours')">3 Hours</button>
+            <button class="bg-red-200 text-black p-2 rounded mb-2 w-full" onclick="setBookingDuration('6 hours')">6 Hours</button>
+            <button class="bg-red-200 text-black p-2 rounded mb-2 w-full" onclick="setBookingDuration('12 hours')">12 Hours</button>
+            <button class="bg-blue-500 text-white p-2 rounded w-full" onclick="closeBookingPopup()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        let timers = {};
+
+        function showPopup(room) {
+            const popup = document.getElementById('popup');
+            popup.classList.remove('hidden');
+            popup.dataset.room = room;
+        }
+
+        function setStatus(status) {
+            const popup = document.getElementById('popup');
+            const room = popup.dataset.room;
+            const roomElement = document.getElementById(room);
+            roomElement.className = `relative flex items-center justify-center border p-4 h-20 ${status}`;
+            popup.classList.add('hidden');
+
+            // Stop timer if status is set to Available or Maintenance
+            if (status !== 'bg-red-200') {
+                stopTimer(room);
+            }
+
+            // Apply status to all checked rooms
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+            checkboxes.forEach(checkbox => {
+                const roomId = checkbox.parentElement.id;
+                const roomElement = document.getElementById(roomId);
+                roomElement.className = `relative flex items-center justify-center border p-4 h-20 ${status}`;
+                if (status !== 'bg-red-200') {
+                    stopTimer(roomId);
+                }
+            });
+        }
+
+        function closePopup() {
+            const popup = document.getElementById('popup');
+            popup.classList.add('hidden');
+        }
+
+        function showBookingOptions() {
+            const bookingPopup = document.getElementById('booking-popup');
+            bookingPopup.classList.remove('hidden');
+            const mainPopup = document.getElementById('popup');
+            mainPopup.classList.add('hidden');
+            bookingPopup.dataset.room = mainPopup.dataset.room;
+        }
+
+        function setBookingDuration(duration) {
+            const bookingPopup = document.getElementById('booking-popup');
+            const room = bookingPopup.dataset.room;
+            const roomElement = document.getElementById(room);
+            roomElement.className = `relative flex items-center justify-center border p-4 h-20 bg-red-200`;
+            bookingPopup.classList.add('hidden');
+            startTimer(room, duration);
+
+            // Apply booking duration to all checked rooms
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+            checkboxes.forEach(checkbox => {
+                const roomId = checkbox.parentElement.id;
+                const roomElement = document.getElementById(roomId);
+                roomElement.className = `relative flex items-center justify-center border p-4 h-20 bg-red-200`;
+                startTimer(roomId, duration);
+            });
+        }
+
+        function closeBookingPopup() {
+            const bookingPopup = document.getElementById('booking-popup');
+            bookingPopup.classList.add('hidden');
+        }
+
+        function startTimer(room, duration) {
+            const roomElement = document.getElementById(room);
+            const durationInMs = {
+                '1 Minute': 60000,
+                '1 hour': 3600000,
+                '3 hours': 10800000,
+                '6 hours': 21600000,
+                '12 hours': 43200000
+            }[duration];
+
+            if (timers[room]) {
+                clearTimeout(timers[room]);
+            }
+
+            timers[room] = setTimeout(() => {
+                roomElement.className = 'relative flex items-center justify-center border p-4 h-20 bg-green-200 blink';
+                alert(`Room ${room.split('-')[1]} is now available`);
+                setTimeout(() => {
+                    roomElement.className = 'relative flex items-center justify-center border p-4 h-20 bg-gray-200';
+                }, 10000);
+            }, durationInMs);
+        }
+
+        function stopTimer(room) {
+            if (timers[room]) {
+                clearTimeout(timers[room]);
+                delete timers[room];
+            }
+        }
+
+        function showContextMenu(event, room) {
+            event.preventDefault();
+            showPopup(room);
+        }
+    </script>
+</body>
+</html>
